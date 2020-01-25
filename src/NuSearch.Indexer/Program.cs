@@ -18,9 +18,10 @@ namespace NuSearch.Indexer
 		static void Main(string[] args)
 		{
 			Client = NuSearchConfiguration.GetClient();
-			var directory = args.Length > 0 && !string.IsNullOrEmpty(args[0]) 
+			/*var directory = args.Length > 0 && !string.IsNullOrEmpty(args[0]) 
 				? args[0] 
-				: NuSearchConfiguration.PackagePath;
+				: NuSearchConfiguration.PackagePath;*/
+			string directory = "/Users/lizziewann/dotnet/nuget-data/";
 			DumpReader = new NugetDumpReader(directory);
 			CurrentIndexName = NuSearchConfiguration.CreateIndexName();
 

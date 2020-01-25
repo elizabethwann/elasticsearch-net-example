@@ -64,3 +64,5 @@ YamlCache
 .vs
 .vscode
 .idea
+
+packages/
